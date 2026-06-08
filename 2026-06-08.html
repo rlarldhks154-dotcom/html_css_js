@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플렉스 박스 레이아웃 퀴즈</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .box {
+      width: calc((100% - 30px) / 3); 
+    }
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+      .box {
+        width: calc((100% - 15px) / 2); 
+      }
+    }
+
+    @media (max-width: 768px) {
+      .box {
+        width: 100%; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">
+      <img src="images/kitten-1.jpg" alt="첫 번째 고양이">
+    </div>
+    <div class="box">
+      <img src="images/kitten-2.jpg" alt="두 번째 고양이">
+    </div>
+    <div class="box">
+      <img src="images/kitten-3.jpg" alt="세 번째 고양이">
+    </div>
+  </div>
+
+</body>
+</html>
