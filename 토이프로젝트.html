@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS 토이 프로젝트</title>
+    <style>
+        body{
+            background-color: #eee;
+            color: #333;
+            margin: 0;
+        }
+        header{
+            background-color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        header h1{
+            color: blue;
+            margin-bottom: 10px;
+        }
+        main{
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+        .card h3{
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        @media (max-width: 768px) {
+        .card-container {
+            grid-template-columns: 1fr;
+        }
+
+        .card {
+            margin-bottom: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML/CSS 토이 프로젝트</h1>
+        <p>좋아하는 음식 / 영화 / 게임 목록</p>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <h3>좋아하는 음식: </h3>
+            </div>
+            <div class="card">
+                <h3>좋아하는 영화: </h3>
+            </div>
+            <div class="card">
+                <h3>좋아하는 게임: </h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2026 HTML/CSS 토이 프로젝트</p>
+    </footer>
+</body>
+</html>
