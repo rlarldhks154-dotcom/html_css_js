@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트렌지션 - scale 함수</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 200px;
+            margin: 20px auto;
+        }
+        .origin{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+        }
+        .origin > div{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            transition: 1s;
+        }
+        #scalex:hover{
+            transform: scaleX(2);
+        }
+        #scaley:hover{
+            transform: scaleY(.15);
+        }
+        #scalexy:hover{
+            transform: scale(2,1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="origin">
+            <div id="scalex"></div>
+        </div>
+        <div class="origin">
+            <div id="scaley"></div>
+        </div>
+        <div class="origin">
+            <div id="scalexy"></div>
+        </div>
+    </div>
+</body>
+</html>
